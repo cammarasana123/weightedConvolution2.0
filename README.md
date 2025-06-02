@@ -7,7 +7,7 @@ Import the wConv2d from the wConv Class.
 
 You can use the function in substitution of nn.Conv2d, as
 
-wConv2d(in_channels, out_channels, kernel_size, padding, den, bias)
+wConv2d(in_channels, out_channels, kernel_size, den, padding, groups, bias)
 
 ## Density function values
 We suggest to fine tune the density function values in the following range, where the first value represents the more external value of the density function.
