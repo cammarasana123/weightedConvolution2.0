@@ -14,8 +14,8 @@ where _den_ represents the density function coefficients.
 ## Density function values
 We suggest to fine tune the density function values in the following range, where the first value represents the more external value of the density function.
 
-- *3 x 3* kernel: [0.5, 1.5]
-- *5 x 5* kernel: [0.05, 1], [0.5, 1.5]
+- *3 x 3* kernel: [[0.5, 1.5]]
+- *5 x 5* kernel: [[0.05, 1], [0.5, 1.5]]
 
 For example:
 - wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7], padding, groups, bias)
