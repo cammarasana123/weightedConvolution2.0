@@ -24,3 +24,10 @@ The *learning* file implements a minimal learning model applying the weighted co
 Python, PyTorch
 
 Tested with: Python 3.11.10, PyTorch 2.6.0
+
+## Requirements
+Please refer to the following articles:
+
+Simone Cammarasana and Giuseppe Patanè. Optimal Density Functions for Weighted Convolution in Learning Models. 2025. DOI: https://arxiv.org/abs/2505.24527.
+
+Simone Cammarasana and Giuseppe Patanè. Optimal Weighted Convolution for Classification and Denosing. 2025. DOI: https://arxiv.org/abs/2505.24558.
