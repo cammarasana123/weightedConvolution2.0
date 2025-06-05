@@ -20,7 +20,7 @@ We suggest to fine tune the density function values in the following range, wher
 For example:
 - wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7], padding, groups, bias)
 
-- wConv2d(in_channels, out_channels, kernel_size = 5, [0.2, 0.8], padding, groups, bias)
+- wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], padding, groups, bias)
 
 ## Test files
 The *wConv.py* is the class with the weighted convolution.
