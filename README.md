@@ -18,6 +18,8 @@ We suggest to fine tune the density function values in the following range, wher
 - *5 x 5* kernel: [[0.05, 1], [0.5, 1.5]]
 
 For example:
+- wConv2d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias)
+
 - wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7], padding, groups, bias)
 
 - wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], padding, groups, bias)
