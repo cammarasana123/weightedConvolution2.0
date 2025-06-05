@@ -16,9 +16,9 @@ We suggest to fine tune the density function values in the following range, wher
 - *5 x 5* kernel: [0.05, 1], [0.5, 1.5]
 
 ## Test files
-The *wConv* is the class with the weighted convolution.
+The *wConv.py* is the class with the weighted convolution.
 
-The *learning* file implements a minimal learning model applying the weighted convolution.
+The *learning.py* file implements a minimal learning model applying the weighted convolution.
 
 ## Requirements
 Python, PyTorch
