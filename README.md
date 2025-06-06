@@ -48,9 +48,11 @@ Python, PyTorch
 
 Tested with: Python 3.11.10, PyTorch 2.6.0
 
-## Requirements
+## References
 Please refer to the following articles:
 
 Simone Cammarasana and Giuseppe Patanè. Optimal Density Functions for Weighted Convolution in Learning Models. 2025. DOI: https://arxiv.org/abs/2505.24527.
 
 Simone Cammarasana and Giuseppe Patanè. Optimal Weighted Convolution for Classification and Denosing. 2025. DOI: https://arxiv.org/abs/2505.24558.
+
+Also available at: https://huggingface.co/cammarasana123/weightedConvolution2.0
