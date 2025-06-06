@@ -7,13 +7,13 @@ Import the wConv2d from the wConv Class.
 
 You can use the function in substitution of nn.Conv2d, as
 
-wConv2d(in_channels, out_channels, kernel_size, den, padding, groups, bias)
+- wConv2d(in_channels, out_channels, kernel_size, den, padding, groups, bias)
 
 where _den_ represents the density function coefficients.
 
 Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 
-wConv3d(in_channels, out_channels, kernel_size, den, padding, groups, bias)
+- wConv3d(in_channels, out_channels, kernel_size, den, padding, groups, bias)
 
 
 ## Density function values
