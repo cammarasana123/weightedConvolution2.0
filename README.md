@@ -24,10 +24,19 @@ For example:
 
 - ```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], padding, groups, bias) ```
 
+Analogously
+- ```wConv3d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias) ```
+
+- ```wConv3d(in_channels, out_channels, kernel_size = 3, den = [0.8], padding, groups, bias) ```
+
+- ```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7], padding, groups, bias) ```
+
 ## Test files
 The *wConv.py* is the class with the weighted convolution.
 
-The *learning.py* file implements a minimal learning model applying the weighted convolution.
+The *learning_2D.py* file implements a minimal learning model applying the weighted convolution to 2D images.
+
+The *learning_3D.py* file implements a minimal learning model applying the weighted convolution to 3D images.
 
 ## Requirements
 Python, PyTorch
