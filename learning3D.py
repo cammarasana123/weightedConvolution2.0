@@ -13,7 +13,6 @@ class SimpleModel3D(nn.Module):
         #self.conv2 = nn.Conv3d(in_channels=8, out_channels=16, kernel_size=5, padding=2, bias=True) ##--> We have replaced this convolution
         self.conv2 = wConv3d(in_channels=8, out_channels=16, kernel_size=5, den=[0.25, 0.75], padding=2, bias=True) ##--> with this convolution
 
-        # Supponiamo input 32x32x32 → dopo due MaxPool3d diventa 8x8x8
         self.fc = nn.Linear(16 * 8 * 8 * 8, num_classes)
 
     def forward(self, x):
@@ -23,9 +22,6 @@ class SimpleModel3D(nn.Module):
         x = self.fc(x)
         return x
 
-# --------------------
-# Training di esempio
-# --------------------
 model = SimpleModel3D(num_classes=10)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
@@ -37,7 +33,6 @@ num_samples = 100
 batch_size = 4
 num_batches = num_samples // batch_size
 
-# Input: [B, C=1, D=32, H=32, W=32]
 inputs = torch.randn(num_samples, 1, 32, 32, 32)
 targets = torch.randint(0, 10, (num_samples,))
 
