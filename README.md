@@ -1,5 +1,5 @@
-# weightedConvolution2.0
-The weighted convolution applies a density function to scale the contribution of neighbouring pixels based on their distance from the central pixel. This choice differs from the traditional uniform convolution, which treats all neighbouring pixels equally.
+# Weighted Convolution2.0
+The _weighted convolution_ applies a density function to scale the contribution of neighbouring pixels based on their distance from the central pixel. This choice differs from the traditional uniform convolution, which treats all neighbouring pixels equally.
 
 The version 2.0 offers an improvement in terms of computational cost, with an execution time comparable to the nn.Conv2d
 
