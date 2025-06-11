@@ -36,11 +36,11 @@ For example:
 ```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], padding, groups, bias) ```
 
 Analogously
-- ```wConv3d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias) ```
+```wConv3d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias) ```
 
-- ```wConv3d(in_channels, out_channels, kernel_size = 3, den = [0.8], padding, groups, bias) ```
+```wConv3d(in_channels, out_channels, kernel_size = 3, den = [0.8], padding, groups, bias) ```
 
-- ```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7], padding, groups, bias) ```
+```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7], padding, groups, bias) ```
 
 ## Tuning strategy
 A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation.
