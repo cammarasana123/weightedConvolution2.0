@@ -35,7 +35,7 @@ For example:
 
 ```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], padding, groups, bias) ```
 
-Analogously
+Analogously:
 
 ```wConv3d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias) ```
 
