@@ -4,7 +4,9 @@ The _weighted convolution_ applies a density function to scale the contribution 
 The version 2.0 offers an improvement in terms of computational cost, with an execution time comparable to the nn.Conv2d
 
 ## Use
-Import the wConv2d from the wConv Class. 
+Import the wConv2d from the wConv Class:
+```from wConv import wConv2d```
+```from wConv import wConv3d```
 
 You can use the function in substitution of nn.Conv2d, as
 
