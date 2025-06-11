@@ -12,13 +12,13 @@ Import the wConv2d from the wConv Class:
 
 You can use the function in substitution of nn.Conv2d, as
 
-- wConv2d(in_channels, out_channels, kernel_size, den, padding, groups, bias)
+```wConv2d(in_channels, out_channels, kernel_size, den, padding, groups, bias)```
 
 where _den_ represents the density function coefficients.
 
 Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 
-- wConv3d(in_channels, out_channels, kernel_size, den, padding, groups, bias)
+```wConv3d(in_channels, out_channels, kernel_size, den, padding, groups, bias)```
 
 
 ## Density function values
@@ -28,11 +28,12 @@ We suggest to fine tune the density function values in the following range, wher
 - *5 x 5* kernel: [[0.05, 1], [0.5, 1.5]]
 
 For example:
-- ```wConv2d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias) ```
 
-- ```wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7], padding, groups, bias) ```
+```wConv2d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias) ```
 
-- ```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], padding, groups, bias) ```
+```wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7], padding, groups, bias) ```
+
+```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], padding, groups, bias) ```
 
 Analogously
 - ```wConv3d(in_channels, out_channels, kernel_size = 1, den = [], padding, groups, bias) ```
