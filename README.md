@@ -5,7 +5,9 @@ The version 2.0 offers an improvement in terms of computational cost, with an ex
 
 ## Use
 Import the wConv2d from the wConv Class:
+
 ```from wConv import wConv2d```
+
 ```from wConv import wConv3d```
 
 You can use the function in substitution of nn.Conv2d, as
