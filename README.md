@@ -21,6 +21,9 @@ Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 ```wConv3d(in_channels, out_channels, kernel_size, den, padding, groups, bias)```
 
 
+## Hyper-parameters
+kernel_size, stride == 1
+
 ## Density function values
 We suggest to fine tune the density function values in the following range, where the first value represents the more external value of the density function.
 
