@@ -12,13 +12,13 @@ Import the wConv2d from the wConv Class:
 
 You can use the function in substitution of nn.Conv2d, as
 
-```wConv2d(in_channels, out_channels, kernel_size, den, stride, padding, groups, bias)```
+```wConv2d(in_channels, out_channels, kernel_size, den, stride, padding, groups, dilation, bias)```
 
 where _den_ represents the density function coefficients.
 
 Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 
-```wConv3d(in_channels, out_channels, kernel_size, den, stride, padding, groups, bias)```
+```wConv3d(in_channels, out_channels, kernel_size, den, stride, padding, groups, dilation, bias)```
 
 ## Info
 Currently, wConv does not support anisotropic kernels (e.g., 3 x 5)
@@ -32,19 +32,19 @@ We suggest to fine tune the density function values in the following range, wher
 
 For example:
 
-```wConv2d(in_channels, out_channels, kernel_size = 1, den = [], stride, padding, groups, bias) ```
+```wConv2d(in_channels, out_channels, kernel_size = 1, den = []) ```
 
-```wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7], stride, padding, groups, bias) ```
+```wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7]) ```
 
-```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8], stride, padding, groups, bias) ```
+```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8]) ```
 
 Analogously:
 
-```wConv3d(in_channels, out_channels, kernel_size = 1, den = [], stride, padding, groups, bias) ```
+```wConv3d(in_channels, out_channels, kernel_size = 1, den = []) ```
 
-```wConv3d(in_channels, out_channels, kernel_size = 3, den = [0.8], stride, padding, groups, bias) ```
+```wConv3d(in_channels, out_channels, kernel_size = 3, den = [0.8]) ```
 
-```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7], stride, padding, groups, bias) ```
+```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7]) ```
 
 ## Tuning strategy
 A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation.
