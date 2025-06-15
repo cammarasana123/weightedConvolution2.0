@@ -23,8 +23,6 @@ Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 ## Info
 Currently, wConv does not support anisotropic kernels (e.g., 3 x 5)
 
-Kernel size, stride, and padding values can be passed only as integers, not as a tuple.
-
 
 ## Density function values
 We suggest to fine tune the density function values in the following range, where the first value represents the more external value of the density function.
