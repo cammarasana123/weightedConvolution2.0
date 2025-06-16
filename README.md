@@ -47,7 +47,7 @@ Analogously:
 ```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7]) ```
 
 ## Tuning strategy
-A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation.
+A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation and removing any randomness.
 Then, the user can compare the trend of the density function, and move in that direction up to the optimal value.
 
 
