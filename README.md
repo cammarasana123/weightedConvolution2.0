@@ -29,7 +29,7 @@ Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 ####  Trainable variant
   
 Import the wConv2d class from the wConv-Trainable file:
-  ```from wConv import wConv2d```
+  ```from wConv-Trainable import wConv2d```
 
 You can use the function in substitution of nn.Conv2d, as
 
