@@ -109,7 +109,7 @@ if scheduler_weight:
 
 if scheduler_den:
     scheduler_den.step()
-
+```
 
 ## Test files
 The *wConv.py* is the class with the weighted convolution.
