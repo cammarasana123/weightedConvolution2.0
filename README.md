@@ -70,6 +70,47 @@ As per our experimental tests, the density function provides the best results wi
 A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation and removing any randomness.
 Then, the user can compare the trend of the density function, and move in that direction up to the optimal value.
 
+## Tuning strategy
+When applying the wConv_Trainable, the training strategy of the parameters must be adapted accordingly. As an example:
+
+```python
+# Qui inizia il codice Python
+den_params = []
+weight_params = []
+other_params = []
+
+for name, param in model.named_parameters():
+    if "den" in name:
+        den_params.append(param)
+    elif "weight" in name and any(isinstance(m, wConv2d) for m in model.modules()):
+        weight_params.append(param)
+    else:
+        other_params.append(param)
+
+# Optimizers
+optimizer_weight = optim.AdamW(weight_params + other_params, lr=1e-4, weight_decay=1e-2)
+optimizer_den = optim.AdamW(den_params, lr=1e-2, weight_decay=1e-2)
+
+# Schedulers
+scheduler_weight = optim.lr_scheduler.CosineAnnealingLR(optimizer_weight, T_max=100, eta_min=1e-6)
+scheduler_den = optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer_den, T_0=10, T_mult=2)
+
+# Training step
+optimizer_weight.zero_grad()
+optimizer_den.zero_grad()
+output = model(input)
+loss = criterion(output, target)
+loss.backward()
+optimizer_weight.step()
+optimizer_den.step()
+
+if scheduler_weight:
+    scheduler_weight.step()
+
+if scheduler_den:
+    scheduler_den.step()
+
+
 ## Test files
 The *wConv.py* is the class with the weighted convolution.
 
