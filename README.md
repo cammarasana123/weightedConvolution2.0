@@ -3,11 +3,14 @@ The _weighted convolution_ applies a density function to scale the contribution 
 
 The version 2.0 offers an improvement in terms of computational cost, with an execution time comparable to the nn.Conv2d
 
-We propose two variants: the wConv shares the den parameters across all the layers without modyfing them. The wConv-Trainable trains the den parameters independently at each layer.
+We propose two variants:
+- **wConv**: non-trainable `den`, shared across all layers.  
+- **wConv-Trainable**: `den` parameters are trainable independently at each layer.
 
 ## Use
-  Non-trainable variant
-Import the wConv2d from the wConv Class in the wConv.py file:
+###  Non-trainable variant
+  
+Import the wConv2d class from the wConv file:
 
 ```from wConv import wConv2d```
 
@@ -23,8 +26,9 @@ Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 
 ```wConv3d(in_channels, out_channels, kernel_size, den, stride, padding, groups, dilation, bias)```
 
-  Trainable variant
-Import the wConv2d from the wConv class in the wConv-Trainable.py file:
+###  Trainable variant
+  
+Import the wConv2d class from the wConv-Trainable file:
   ```from wConv import wConv2d```
 
 You can use the function in substitution of nn.Conv2d, as
