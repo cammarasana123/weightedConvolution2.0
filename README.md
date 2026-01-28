@@ -77,3 +77,13 @@ Simone Cammarasana and Giuseppe Patanè. Optimal Weighted Convolution for Classi
 Also available at: https://huggingface.co/cammarasana123/weightedConvolution2.0
 
 ## Some results
+
+Liu, Jianlei, et al. "Dual Prompts Guided Cross-Domain Transformer for Unified Day-Night Image Dehazing." _Knowledge-Based Systems_ (2026): 115362.
+
+Cai, Hao, et al. "LFP-Mono: Lightweight Self-Supervised Network Applying Monocular Depth Estimation to Low-Altitude Environment Scenarios." _Computers 15.1_ (2026): 19.
+
+Cui, Yuxin, Penghui Li, and Bo Xia. "CTB-YOLO: A Lightweight Framework for Robust Cotton Terminal Bud Detection in Complex Field Environments." _Smart Agricultural Technology_ (2026): 101795.
+
+Zhang, Cheng, et al. "AMFS-Net: An Adaptive Multi-Scale Feature Fusion Framework for Efficient SAR Ship Detection." _IEEE Geoscience and Remote Sensing Letters_ (2026).
+
+Tian, Xing, and Juan Wang. "FWN: Global-Local Feature Weighted Fusion Network for Medical Image Classification." 6th International Conference on Internet of Things, _Artificial Intelligence and Mechanical Automation (IoTAIMA)_. IEEE, 2025.
