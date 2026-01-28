@@ -29,6 +29,7 @@ We suggest to fine tune the density function values in the following range, wher
 
 - *3 x 3* kernel: [[0.5, 1.5]]
 - *5 x 5* kernel: [[0.05, 1], [0.5, 1.5]]
+- *7 x 7* kernel: [[0.05, 0.5], [0.15, 1.0], [0.25, 1.5]]
 
 For example:
 
@@ -37,6 +38,8 @@ For example:
 ```wConv2d(in_channels, out_channels, kernel_size = 3, den = [0.7]) ```
 
 ```wConv2d(in_channels, out_channels, kernel_size = 5, den= [0.2, 0.8]) ```
+
+```wConv2d(in_channels, out_channels, kernel_size = 7, den= [0.25, 0.15, 0.55]) ```
 
 Analogously:
 
@@ -47,9 +50,10 @@ Analogously:
 ```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7]) ```
 
 ## Tuning strategy
+As per our experimental tests, the density function provides the best results with larger kernels (e.g., *7 x 7*). For example, we reached the best results with ```den = [0.25, 0.15, 0.55]```.
+
 A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation and removing any randomness.
 Then, the user can compare the trend of the density function, and move in that direction up to the optimal value.
-
 
 ## Test files
 The *wConv.py* is the class with the weighted convolution.
