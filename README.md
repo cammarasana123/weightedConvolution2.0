@@ -86,4 +86,4 @@ Cui, Yuxin, Penghui Li, and Bo Xia. "CTB-YOLO: A Lightweight Framework for Robus
 
 Zhang, Cheng, et al. "AMFS-Net: An Adaptive Multi-Scale Feature Fusion Framework for Efficient SAR Ship Detection." _IEEE Geoscience and Remote Sensing Letters_ (2026).
 
-Tian, Xing, and Juan Wang. "FWN: Global-Local Feature Weighted Fusion Network for Medical Image Classification." 6th International Conference on Internet of Things, _Artificial Intelligence and Mechanical Automation (IoTAIMA)_. IEEE, 2025.
+Tian, Xing, and Juan Wang. "FWN: Global-Local Feature Weighted Fusion Network for Medical Image Classification." _6th International Conference on Internet of Things, Artificial Intelligence and Mechanical Automation (IoTAIMA)_. IEEE, 2025.
