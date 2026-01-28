@@ -28,8 +28,8 @@ Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 
 ####  Trainable variant
   
-Import the wConv2d class from the wConv-Trainable file:
-  ```from wConv-Trainable import wConv2d```
+Import the wConv2d class from the wConv_Trainable file:
+  ```from wConv_Trainable import wConv2d```
 
 You can use the function in substitution of nn.Conv2d, as
 
@@ -73,7 +73,7 @@ Then, the user can compare the trend of the density function, and move in that d
 ## Test files
 The *wConv.py* is the class with the weighted convolution.
 
-The *wConv-Trainable.py* is the class with the weighted convolution where the den parameters are trainable by the model. Each layer of the architecture has its own den parameters.
+The *wConv_Trainable.py* is the class with the weighted convolution where the den parameters are trainable by the model. Each layer of the architecture has its own den parameters.
 
 The *learning_2D.py* file implements a minimal learning model applying the weighted convolution to 2D images.
 
