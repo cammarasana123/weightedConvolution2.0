@@ -6,7 +6,8 @@ The version 2.0 offers an improvement in terms of computational cost, with an ex
 We propose two variants: the wConv shares the den parameters across all the layers without modyfing them. The wConv-Trainable trains the den parameters independently at each layer.
 
 ## Use
-Import the wConv2d from the wConv Class:
+  Non-trainable variant
+Import the wConv2d from the wConv Class in the wConv.py file:
 
 ```from wConv import wConv2d```
 
@@ -21,6 +22,14 @@ where _den_ represents the density function coefficients.
 Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 
 ```wConv3d(in_channels, out_channels, kernel_size, den, stride, padding, groups, dilation, bias)```
+
+  Trainable variant
+Import the wConv2d from the wConv class in the wConv-Trainable.py file:
+  ```from wConv import wConv2d```
+
+You can use the function in substitution of nn.Conv2d, as
+
+```wConv2d(in_channels, out_channels, kernel_size, stride, padding, groups, dilation, bias)```
 
 ## Info
 Currently, wConv does not support anisotropic kernels (e.g., 3 x 5)
