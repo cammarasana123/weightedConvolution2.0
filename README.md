@@ -8,7 +8,7 @@ We propose two variants:
 - **wConv-Trainable**: `den` parameters are trainable independently at each layer.
 
 ## Use
-###  Non-trainable variant
+####  Non-trainable variant
   
 Import the wConv2d class from the wConv file:
 
@@ -26,7 +26,7 @@ Analogously, you can import and use wConv3d in substitution of nn.Conv3d, as
 
 ```wConv3d(in_channels, out_channels, kernel_size, den, stride, padding, groups, dilation, bias)```
 
-###  Trainable variant
+####  Trainable variant
   
 Import the wConv2d class from the wConv-Trainable file:
   ```from wConv import wConv2d```
