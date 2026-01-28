@@ -5,7 +5,7 @@ The version 2.0 offers an improvement in terms of computational cost, with an ex
 
 We propose two variants:
 - **wConv**: non-trainable `den`, shared across all layers.  
-- **wConv-Trainable**: `den` parameters are trainable independently at each layer.
+- **wConv_Trainable**: `den` parameters are trainable independently at each layer.
 
 ## Use
 ####  Non-trainable variant
