@@ -3,6 +3,8 @@ The _weighted convolution_ applies a density function to scale the contribution 
 
 The version 2.0 offers an improvement in terms of computational cost, with an execution time comparable to the nn.Conv2d
 
+We propose two variants: the wConv shares the den parameters across all the layers without modyfing them. The wConv-Trainable trains the den parameters independently at each layer.
+
 ## Use
 Import the wConv2d from the wConv Class:
 
