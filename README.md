@@ -50,7 +50,7 @@ Analogously:
 ```wConv3d(in_channels, out_channels, kernel_size = 5, den= [0.1, 0.7]) ```
 
 ## Tuning strategy
-As per our experimental tests, the density function provides the best results with larger kernels (e.g., *7 x 7*). For example, we reached the best results with ```den = [0.25, 0.15, 0.55]```.
+As per our experimental tests, the density function provides the best results with larger kernels (e.g., *7 x 7*). For example, given a specific denoising task, we reached the best results with ```den = [0.25, 0.15, 0.55]```.
 
 A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation and removing any randomness.
 Then, the user can compare the trend of the density function, and move in that direction up to the optimal value.
@@ -75,3 +75,5 @@ Simone Cammarasana and Giuseppe Patanè. Optimal Density Functions for Weighted 
 Simone Cammarasana and Giuseppe Patanè. Optimal Weighted Convolution for Classification and Denosing. 2025. DOI: https://arxiv.org/abs/2505.24558.
 
 Also available at: https://huggingface.co/cammarasana123/weightedConvolution2.0
+
+## Some results
