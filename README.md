@@ -70,7 +70,7 @@ As per our experimental tests, the density function provides the best results wi
 A possible tuning strategy for a *3 x 3* kernel is to test three different density values: [0.9], [1.0], and [1.1], possibly using the same weights for the kernel initialisation and removing any randomness.
 Then, the user can compare the trend of the density function, and move in that direction up to the optimal value.
 
-## Tuning strategy
+## Training strategy
 When applying the wConv_Trainable, the training strategy of the parameters must be adapted accordingly. As an example:
 
 ```python
