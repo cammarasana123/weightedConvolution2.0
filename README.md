@@ -58,6 +58,8 @@ Then, the user can compare the trend of the density function, and move in that d
 ## Test files
 The *wConv.py* is the class with the weighted convolution.
 
+The *wConv-Trainable.py* is the class with the weighted convolution where the den parameters are trainable by the model. Each layer of the architecture has its own den parameters.
+
 The *learning_2D.py* file implements a minimal learning model applying the weighted convolution to 2D images.
 
 The *learning_3D.py* file implements a minimal learning model applying the weighted convolution to 3D images.
